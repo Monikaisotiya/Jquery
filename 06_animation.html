@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+      div{
+    height: 200px;
+    width: 200px;
+      }
+    </style>
+
+</head>
+
+<body>
+    <button id="ani">animate</button>
+<button id="mona">monika</button>
+
+<div  style="background-color: red" id="m1">
+    <a id="a1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed  Quidem?</a>
+</div>
+
+<script>
+  $(document).ready(function () {
+    $("#ani").click(function () {
+        $("#m1").animate({
+            transition: ".6 all ease",
+            marginLeft: '400px',  
+            width:"200px"
+        })
+        
+    })
+    $(document).ready(function () {
+        $("#mona").click(function () {
+            $("#a1").css({
+                "transition": " .6 all",
+              "font-size":"30px",
+            })
+            
+        })
+        $("#mona").click(function () {
+          $("#m1").animate({left: '400px' });
+             $("#a1").animate({width: '100px' });
+        });
+    })
+    
+  })
+
+</script> 
+
+
+   
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- CDN LINK  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <BUtton id="in">Fade in</BUtton>
+    <button id="out">Fade out</button>
+    <button id="toggle">Fade toggle</button>
+    <button id="to">Fade to</button>
+
+    <div style="background-color: beige;">
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero iste eius explicabo laudantium quo similique mollitia quae maiores consequatur! Adipisci.</p>
+
+
+        <script>
+   $(document).ready(function() {
+            $("#in").click(function() {
+                $("#p1").fadeOut(2000);
+            })
+
+            $("#out").ready(function () {
+                $("#out").click(function () {
+                    $("#p1").fadeIn(3000);
+                })
+
+                $("#toggle").click(function() {
+                $("#p1").fadeToggle(1000);
+            })
+
+            $("#to").click(function() {
+                $("#p1").fadeToggle(3000);
+            })
+            })
+           
+  })
+
+  
+
+
+
+        </script>
+    </div>
+
+</body>
+</html>

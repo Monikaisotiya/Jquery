@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <button id="up">slide up</button>
+  <button id="down">slide down</button>
+  <button id="toggle">toggle</button>
+  <button id="stop">stop</button>
+
+<div style="background-color: green;">
+  <p id="para">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem quae, magni optio soluta neque laborum eaque quia voluptate animi est, ex libero id tenetur cum totam saepe unde ipsa ducimus incidunt pariatur? Totam, nihil at error corrupti dicta soluta! Dolorum totam cum non reiciendis esse modi fuga optio at unde.
+  </p>
+</div>
+
+
+
+<script>
+  $(document).ready(function () {
+    $("#up").click(function () {
+      $("#para").slideUp(3000);
+    })
+  })
+  $(document).ready(function () {
+    $("#down").click(function () {
+      $("#para").slideDown(3000);
+    })
+  })
+
+  $(document).ready(function () {
+    $("#toggle").click(function () {
+      $("#para").toggle(2000);
+    })
+  })
+
+  $(document).ready(function () {
+    $("#stop").click(function () {
+      $("#para").stop(2000);
+    })
+  })
+
+</script>
+</body>
+</html>
